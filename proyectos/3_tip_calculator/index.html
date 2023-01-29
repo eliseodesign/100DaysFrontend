@@ -23,31 +23,49 @@
       <p>Bill</p>
       <div class="in">
         <span>$</span>
-        <input type="text" value="0">
+        <input id="bill" type="number" value="0" min="0">
       </div>
 
 
-      <p>Select Tip %</p>
-      <div id="tips">
+      <form id="tips">
+        <span class="active-span">
+          <input type="radio" name="tip" value="5" id="tip-5" checked >
+          <label for="tip-5">5%</label>
+        </span>
+
+        <span>
+          <input type="radio" name="tip" value="10" id="tip-10">
+          <label for="tip-10">10%</label>
+        </span>
+
+        <span>
+          <input type="radio" name="tip" value="15" id="tip-15">
+          <label for="tip-15">15%</label>
+        </span>
+
+        <span>
+          <input type="radio" name="tip" value="25" id="tip-25">
+          <label for="tip-25">25%</label>
+        </span>
+
+        <span>
+          <input type="radio" name="tip" value="50" id="tip-50">
+          <label for="tip-50">50%</label>
+        </span>
+
         
+          <input id="custom" type="number" placeholder="Custom">
         
-        
-        
-        
-        <span>5%</span>
-        <span>10%</span>
-        <span>15%</span>
-        <span>25%</span>
-        <span>50%</span>
-        <span>custom</span>
-      </div>
+
+
+      </form>
 
       <p>Number Of People</p>
       <div class="in">
         <span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill:var(--dark-grayish-cyan);"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path></svg>
         </span>
-        <input type="text" value="1">
+        <input id="people" type="number" value="1" min="1">
       </div>
     </section>
 
@@ -59,21 +77,24 @@
         <span>/ person</span>
       </p>
 
-      <span id="tip"> 0</span>
+      <span id="tip"> </span>
       
 
       <p class="info">
         <span>Total</span>
         <span>/ person</span>
       </p>
-      <span id="total"> 0</span>
+      <span id="total"> </span>
 
-      <button>Reset</button>
+      <button id="btn">Reset</button>
     </section>
 
   </main>
 
 
   
+  
+  <script src="./assets/js/jQuery.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

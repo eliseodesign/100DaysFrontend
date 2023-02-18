@@ -1,0 +1,19 @@
+#strength {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  height: 20px;
+}
+
+#strength div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+}
+
+#strength div span{
+  transition: background .3s;
+  z-index: 1;
+  width: 18px;
+  border: 1px solid #000;
+  background: #fff;
+}

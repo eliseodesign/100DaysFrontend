@@ -1,4 +1,4 @@
-import createPassword from "./algorimth.js"
+import createPassword from "./algorithm.js"
 
 $("#n-len").text($("#length").val())
 
@@ -22,12 +22,12 @@ function generate() {
     $("#in_num").is(":checked"), 
     $("#in_sym").is(":checked"));
 
-  $("#password").text(password);
+  $("#password").val(password);
 
   // Calcular la fortaleza de la contraseña
-  let strength = 0;
+  let strength = 1;
     if (password.length < 8) {
-      strength = 0;
+      strength = 1;
     } else {
     if (/[a-z]/.test(password)) {
       strength += 1;
@@ -43,6 +43,12 @@ function generate() {
     }
   }
 
-  // Agregar las clases correspondientes
-  $("#strength").removeClass().addClass("strength-" + strength);
+  let spans = $("#strength div span")
+  
+  $("#strength div span").removeClass()
+  
+  for(let i = 0; i < strength; i++){
+    $(spans[i]).addClass("strength-" + strength);
+  }
+
 }

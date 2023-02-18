@@ -9,18 +9,19 @@
 }
 
 /* Estilos para cada nivel de fortaleza */
-.strength-0 {
-  background-color: red;
+
+#strength div span.strength-1 {
+  background-color: rgb(255, 95, 95);
 }
 
-.strength-1 {
-  background-color: orange;
+#strength div span.strength-2 {
+  background-color: rgb(255, 184, 54);
 }
 
-.strength-2 {
-  background-color: yellow;
+#strength div span.strength-3 {
+  background-color: rgb(255, 255, 94);
 }
 
-.strength-3 {
-  background-color: green;
+#strength div span.strength-4 {
+  background-color: rgb(126, 255, 93);
 }

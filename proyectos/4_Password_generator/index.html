@@ -6,39 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/nivels.css">
+  <link rel="stylesheet" href="./assets/strong.css">
   <title>Password Generator</title>
 </head>
 <body>
 
   <main>
       
-    <h1>Password Generator</h1>
+    <h1>Generador Contraseñas</h1>
     <p>by eliseodesign</p>
 
     <section class="resul">
-      <input type="text" readonly id="password"></input>
+      <input placeholder="Password" type="text" readonly id="password"></input>
     </section>
 
     <section class="config">
-      <div >
-        <p>Character Length</p> <p id="n-len"></p>
-        <input min="6" max="16" value="6" type="range" id="length"> 
+      <div class="character">
+        <p>Cantidad de caracteres</p> <p id="n-len"></p>
       </div>
-    
+      
+      <input min="6" max="16" value="6" type="range" id="length"> 
+
       <div class="checks">
         <input type="checkbox" id="in_upp">
-        <label>Include UpperCase</label>
+        <label>Incluir Mayusculas</label>
         <input type="checkbox" id="in_num">
-        <label for="">Include Number</label>
+        <label for="">Incluir Números</label>
         <input type="checkbox" id="in_sym">
-        <label>Include Symbols</label>
+        <label>Incluir Simbolos</label>
       </div>
 
       <div id="strength">
-        <p>STRENGTH</p>
+        <p>Seguridad</p>
+        <div>
+          <span></span><span></span><span></span><span></span>
+        </div>
       </div>
 
-      <button id="generate">Generate</button>
+      <button id="generate">Generar</button>
 
       
     </section>

@@ -1,0 +1,26 @@
+
+/* Nivel de fortaleza */
+.strength {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+/* Estilos para cada nivel de fortaleza */
+.strength-0 {
+  background-color: red;
+}
+
+.strength-1 {
+  background-color: orange;
+}
+
+.strength-2 {
+  background-color: yellow;
+}
+
+.strength-3 {
+  background-color: green;
+}

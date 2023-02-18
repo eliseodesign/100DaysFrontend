@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/nivels.css">
+  <title>Password Generator</title>
+</head>
+<body>
+
+  <main>
+      
+    <h1>Password Generator</h1>
+    <p>by eliseodesign</p>
+
+    <section class="resul">
+      <input type="text" readonly id="password"></input>
+    </section>
+
+    <section class="config">
+      <div >
+        <p>Character Length</p> <p id="n-len"></p>
+        <input min="6" max="16" value="6" type="range" id="length"> 
+      </div>
+    
+      <div class="checks">
+        <input type="checkbox" id="in_upp">
+        <label>Include UpperCase</label>
+        <input type="checkbox" id="in_num">
+        <label for="">Include Number</label>
+        <input type="checkbox" id="in_sym">
+        <label>Include Symbols</label>
+      </div>
+
+      <div id="strength">
+        <p>STRENGTH</p>
+      </div>
+
+      <button id="generate">Generate</button>
+
+      
+    </section>
+    
+  </main>
+
+  <script src="./assets/libs/jquery.min.js"></script>
+  <script type="module" src="./assets/main.js"></script>
+</body>
+</html>

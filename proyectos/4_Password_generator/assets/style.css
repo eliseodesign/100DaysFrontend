@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(36, 39, 49);
+  color: #fef;
+  font-family: sans-serif;
+
+}
+
+/* Encabezado */
+h1 {
+  font-size: 36px;
+  margin: 20px;
+}
+
+/* Contenedor del botón */
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Contenedor principal */
+main {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+
+
+.resul{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 2em;
+  background: rgba(255, 255, 255, 0.062);
+  padding: .5em 1em;
+  border-radius: 10px;
+  margin: 10px 0 ;
+}
+
+
+.config{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.062);
+  padding: .5em 1em;
+  border-radius: 10px;
+
+}
+
+.checks{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}

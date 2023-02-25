@@ -1,0 +1,57 @@
+@import "./_vars" ;
+.head{
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  
+  h1{
+    font-size: 2em;
+  }
+  span{
+    font-size:1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    margin: 0 0 0 .5em;
+    color: $white;
+    background:$blue;
+    border-radius: $radius
+  }
+}
+
+
+.lists{
+  padding: 1em;
+
+  .new::after{
+    position: absolute;
+    margin-left: 1em;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: $red;
+    border-radius: 1em;
+  }
+
+  img{
+    object-fit: contain;
+  }
+  a{
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    padding: $radius;
+    border-radius: $radius;
+    margin: 10px;
+    background:$light-grayish-blue;
+
+    &.opened{
+      background: $white;
+    }
+
+    div{
+      margin-left: 1em;
+      display: grid;
+    }
+  }
+}

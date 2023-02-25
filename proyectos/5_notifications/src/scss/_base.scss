@@ -1,12 +1,19 @@
-// Primary
-$red: hsl(1, 90%, 64%);
-$blue: hsl(219, 85%, 26%);
+@use "./_vars" as var;
 
-// Neutral
-$white: hsl(0, 0%, 100%);
-$v-light-grayish-blue: hsl(210, 60%, 98%);
-$light-grayish-blue-1: hsl(211, 68%, 94%);
-$light-grayish-blue-2: hsl(205, 33%, 90%);
-$grayish-blue: hsl(219, 14%, 63%);
-$dark-grayish-blue: hsl(219, 12%, 42%);
-$v-dark-blue: hsl(224, 21%, 14%);
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding-top: 1em;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: var.$light-grayish-blue;
+}
+
+.App{
+  max-width: 800px;
+  padding:1em;
+  border-radius: var.$radius;
+  margin: auto;
+  background: var.$white;
+}

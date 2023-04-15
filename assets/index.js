@@ -10,7 +10,7 @@ for(let i = 0; i < proyectos.length; i++){
     <div class="project">
             <div class="project__header">
                 <div class="header__img">
-                    <img src="./assets/img/${i+1}.jpg" alt="">
+                    <img src="./assets/img/${i+1}.png" alt="">
                 </div>
 
                 <div class="info">

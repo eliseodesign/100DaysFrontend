@@ -11,8 +11,6 @@ $("#generate").click(function(){
   generate()
   console.log($("#in_upp"))
   console.log("Valor del input range:", $("#length").val());
-
-
 })
 
 function generate() {
